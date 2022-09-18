@@ -1,0 +1,989 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/ffe1b189f7.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              bodyColor: "#1f1f1f",
+              themeColor: "#02B290",
+              textColor: "#cad5e2",
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="stylesheet" href="./CSS/style.css" />
+    <title>Portfolio | Soumyadeep Laha</title>
+  </head>
+
+  <body class="bg-bodyColor">
+    <div>
+      <!-- Header -->
+      <header>
+        <nav
+          class="fixed top-0 z-10 flex justify-between items-center bg-bodyColor w-[100%] px-10 py-4"
+        >
+          <div class="nav-logo">
+            <a href="#">
+              <img
+                src="./images/logo.png"
+                alt=""
+                width="50"
+                id="logo"
+                class="rounded-full"
+              />
+            </a>
+          </div>
+          <div class="nav-list w-[40%]">
+            <ul
+              class="lg:items-center lg:flex z-[-1] lg:z-auto lg:static absolute bg-transparent lg:h-0 h-[100vh] w-full left-0 top-[-400px] lg:w-auto lg:py-0 py-10 lg:pl-0 pl-7 lg:opacity-100 opacity-0 transition-all ease-in duration-300 bg-black lg:bg-transparent"
+            >
+              <li
+                class="text-4xl lg:text-xl text-textColor hover:text-white mx-4 mt-10 lg:mt-0"
+              >
+                <a href="#">Home</a>
+              </li>
+              <li
+                class="text-4xl lg:text-xl text-textColor hover:text-white mx-4 mt-10 lg:mt-0"
+              >
+                <a href="#about">About</a>
+              </li>
+              <li
+                class="text-4xl lg:text-xl text-textColor hover:text-white mx-4 mt-10 lg:mt-0"
+              >
+                <a href="#skills">Skills</a>
+              </li>
+              <li
+                class="text-4xl lg:text-xl text-textColor hover:text-white mx-4 mt-10 lg:mt-0"
+              >
+                <a href="#projects">Projects</a>
+              </li>
+              <li
+                class="text-4xl lg:text-xl text-textColor hover:text-white mx-4 mt-10 lg:mt-0"
+              >
+                <a href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <div
+            class="humburger flex cursor-pointer lg:hidden block text-5xl bg-white"
+          >
+            <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+          </div>
+        </nav>
+
+        <div
+          class="intro flex flex-col lg:flex-row justify-between items-center w-[100%] mt-28"
+        >
+          <div
+            class="intro-text w-full lg:w-1/2 flex flex-col items-center md:items-start px-4 lg:px-20 gap-y-6 lg:gap-y-8"
+          >
+            <h3 class="text-4xl md:text-2xl text-textColor">Hello I'm</h3>
+            <h1
+              class="text-5xl md:text-7xl text-themeColor text-center lg:text-left"
+            >
+              Soumyadeep Laha
+            </h1>
+            <h2 class="text-4xl text-textColor text-center">
+              I'm a <span class="text-themeColor">Frontend Developer</span>
+            </h2>
+
+            <div>
+              <a href="#about"
+                ><button
+                  class="text-lg text-themeColor border-2 border-themeColor rounded-full p-2 md:p-4 hover:bg-themeColor hover:text-textColor hover:ease-in hover:duration-300"
+                >
+                  More About me
+                </button></a
+              >
+            </div>
+          </div>
+          <div class="w-full flex justify-center items-center">
+            <img
+              src="./images/profile-pic (1).png"
+              alt=""
+              class=" hidden lg:flex w-[70%]"
+            />
+          </div>
+        </div>
+      </header>
+
+      <!-- About Section -->
+      <section class="mt-20 p-10 lg:px-20 shadow-2xl lg:mx-10 rounded-xl">
+        <h2 class="text-textColor text-2xl lg:text-4xl underline">About Me</h2>
+        <article id="about">
+          <div class="about-img mt-10 block lg:hidden">
+            <img
+              src="./images/my-crop-pic.jpg"
+              alt=""
+              width="450"
+              class="rounded-xl min-w-full"
+            />
+          </div>
+          <div class="about-text flex flex-col items-start gap-y-10 mt-10">
+            <h2 class="text-2xl lg:text-4xl text-textColor">I'm</h2>
+            <h1 class="text-4xl lg:text-7xl text-themeColor">
+              Soumyadeep Laha
+            </h1>
+            <p class="text-textColor text-xl">
+              A self-driven learner, hard working and ambitious towards the
+              goal. I have recently completed Masters in Computer Application. I
+              am a frontend developer and aspiring full stack developer having
+              over 1+ year of experience in frontend development. My goal is to
+              grow as a person and proffessional every day. And each day I push
+              myself to learn something new about the web development. Currently
+              learning Fullstack Javascript Web Development conducted by
+              iNeuron.I love to build products related to web. I am ready to
+              work and collaborate.
+            </p>
+            <div class="personal-details">
+              <p class="text-textColor text-2xl font-bold">
+                Hobbies :
+                <span class="font-normal text-xl"
+                  >Singing, Reading Novels, Watching Cricket, Cooking</span
+                >
+              </p>
+              <p class="text-textColor text-2xl font-bold">
+                From :
+                <span class="font-normal text-xl">Varanasi, India</span>
+              </p>
+              <p class="text-textColor text-2xl font-bold">
+                Gender :
+                <span class="font-normal text-xl">Male</span>
+              </p>
+            </div>
+
+            <div
+              class="about-button w-full lg:w-[30%] flex justify-between items-center mt-10"
+            >
+              <a href="./CV/Soumyadeep_LAHA_Resume.pdf" download
+                ><button
+                  class="text-lg text-themeColor border-2 border-themeColor rounded-full p-2 md:p-4 hover:bg-themeColor hover:text-textColor hover:ease-in hover:duration-300"
+                >
+                  <span></span> Download CV
+                </button></a
+              >
+              <a href="#contact"
+                ><button
+                  class="text-lg text-themeColor border-2 border-themeColor rounded-full p-2 md:p-4 hover:bg-themeColor hover:text-textColor hover:ease-in hover:duration-300"
+                >
+                  <span></span> Let's Connect
+                </button></a
+              >
+            </div>
+            <div
+              class="social-icons flex flex-row justify-between items-center w-[100%] lg:w-[30%]"
+            >
+              <a href="https://www.facebook.com/soumyadeep.laha">
+                <img
+                  src="./images/facebook-brands.svg"
+                  alt="fb"
+                  width="50"
+                  class="social hover:scale-110 hover:ease-in hover:duration-300"
+                />
+              </a>
+              <a href="https://www.instagram.com/lsoumyadeep/">
+                <img
+                  src="./images/instagram-brands.svg"
+                  alt="ig"
+                  width="50"
+                  class="social hover:scale-110 hover:ease-in hover:duration-300"
+                />
+              </a>
+              <a href="https://www.linkedin.com/in/soumyadeep-laha-048856206/">
+                <img
+                  src="./images/linkedin-brands.svg"
+                  alt="li"
+                  width="50"
+                  class="social hover:scale-110 hover:ease-in hover:duration-300"
+                />
+              </a>
+              <a href="https://github.com/ISoumyadeepLaha">
+                <img
+                  src="./images/github-brands.svg"
+                  alt="gh"
+                  width="50"
+                  class="social hover:scale-110 hover:ease-in hover:duration-300"
+                />
+              </a>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <!-- Skills Section -->
+      <section class="mt-20 p-10 lg:px-20 shadow-2xl lg:mx-10 rounded-xl">
+        <h2 class="text-textColor text-2xl lg:text-4xl underline">My Skills</h2>
+        <article id="skills">
+          <div
+            class="skill-container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-y-10 w-[100%] mt-10"
+          >
+            <div
+              class="skill-body flex flex-col items-center hover:scale-110 hover:ease-in-out hover:duration-300"
+            >
+              <img src="./images/html5.png" alt="" width="200" class="" />
+              <h2 class="text-2xl text-textColor">HTML 5</h2>
+            </div>
+            <div
+              class="skill-body flex flex-col items-center hover:scale-110 hover:ease-in-out hover:duration-300"
+            >
+              <img src="./images/css3.png" alt="" width="200" class="" />
+              <h2 class="text-2xl text-textColor">CSS 3</h2>
+            </div>
+            <div
+              class="skill-body flex flex-col items-center hover:scale-110 hover:ease-in-out hover:duration-300"
+            >
+              <img src="./images/tailwindCSS.jpg" alt="" width="300" class="" />
+              <h2 class="mt-14 text-2xl text-textColor">Tailwind CSS</h2>
+            </div>
+            <div
+              class="skill-body flex flex-col items-center hover:scale-110 hover:ease-in-out hover:duration-300"
+            >
+              <img src="./images/git.png" alt="" width="200" class="" />
+              <h2 class="text-2xl text-textColor">Git and Github</h2>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <!-- Projects Section -->
+      <section class="mt-20 p-10 lg:px-20 shadow-2xl lg:mx-10 rounded-xl">
+        <h2 class="text-textColor text-2xl lg:text-4xl underline">
+          My Projects
+        </h2>
+        <article id="projects" class="mt-10">
+          <div
+            class="Projects grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"
+          >
+            <div
+              class="card flex flex-col items-start md:items-center gap-y-4 p-6 shadow-xl rounded-xl bg-cardbgColor"
+            >
+              <img
+                src="./images/Screen_Project1.jpg"
+                alt=""
+                class="hover:scale-110 hover:duration-300 hover:ease-in transition w-full"
+              />
+              <p class="text-textColor text-3xl text-center">
+                Street Style Landing Page
+              </p>
+              <p class="text-textColor">Tech : HTML5, CSS3</p>
+              <p class="text-textColor">For : Desktop</p>
+              <div
+                class="buttons mx-auto w-full flex justify-between items-center"
+              >
+                <a
+                  href="https://github.com/ISoumyadeepLaha/Street-Style-Landing-Page-proj01"
+                  ><button
+                    class="text-lg text-themeColor border-2 border-themeColor rounded-full p-2 md:px-4 hover:bg-themeColor hover:text-textColor hover:ease-in hover:duration-300"
+                  >
+                    Source code
+                  </button></a
+                >
+                <a href="https://street-style-landing-page-proj01.netlify.app/"
+                  ><button
+                    class="text-lg text-themeColor border-2 border-themeColor rounded-full p-2 md:px-4 hover:bg-themeColor hover:text-textColor hover:ease-in hover:duration-300"
+                  >
+                    Live link
+                  </button></a
+                >
+              </div>
+            </div>
+            <div
+              class="card flex flex-col items-start md:items-center gap-y-6 p-6 shadow-xl rounded-xl"
+            >
+              <img
+                src="./images/Screen_Project2.jpg"
+                alt=""
+                class="hover:scale-110 hover:duration-300 hover:ease-in transition w-full"
+              />
+              <p class="text-textColor text-3xl text-center">
+                Food Landing Page
+              </p>
+              <p class="text-textColor">Tech : HTML5, CSS3</p>
+              <p class="text-textColor">For : Desktop</p>
+              <div
+                class="buttons w-full mx-auto flex justify-between items-center"
+              >
+                <a
+                  href="https://github.com/ISoumyadeepLaha/Food-Restaurent-Home-page-proj02"
+                  ><button
+                    class="text-lg text-themeColor border-2 border-themeColor rounded-full p-2 md:px-4 hover:bg-themeColor hover:text-textColor hover:ease-in hover:duration-300"
+                  >
+                    Source code
+                  </button></a
+                >
+                <a href="https://food-restaurent-home-page-proj02.netlify.app/"
+                  ><button
+                    class="text-lg text-themeColor border-2 border-themeColor rounded-full p-2 md:px-4 hover:bg-themeColor hover:text-textColor hover:ease-in hover:duration-300"
+                  >
+                    Live link
+                  </button></a
+                >
+              </div>
+            </div>
+            <div
+              class="card flex flex-col items-start md:items-center gap-y-6 p-6 shadow-xl rounded-xl"
+            >
+              <img
+                src="./images/Screen_Project3.jpg"
+                alt=""
+                class="hover:scale-110 hover:duration-300 hover:ease-in transition w-full"
+              />
+              <p class="text-textColor text-3xl text-center">Law Home Page</p>
+              <p class="text-textColor">Tech : HTML5, CSS3</p>
+              <p class="text-textColor">For : Desktop</p>
+              <div
+                class="buttons w-full mx-auto flex justify-between items-center"
+              >
+                <a
+                  href="https://github.com/ISoumyadeepLaha/Law-Home-Page-Proj03"
+                  ><button
+                    class="text-lg text-themeColor border-2 border-themeColor rounded-full p-2 md:px-4 hover:bg-themeColor hover:text-textColor hover:ease-in hover:duration-300"
+                  >
+                    Source code
+                  </button></a
+                >
+                <a href="https://law-homepage-proj03.netlify.app/"
+                  ><button
+                    class="text-lg text-themeColor border-2 border-themeColor rounded-full p-2 md:px-4 hover:bg-themeColor hover:text-textColor hover:ease-in hover:duration-300"
+                  >
+                    Live link
+                  </button></a
+                >
+              </div>
+            </div>
+            <div
+              class="card flex flex-col items-start md:items-center gap-y-6 p-6 shadow-xl rounded-xl"
+            >
+              <img
+                src="./images/Screen_Project4.jpg"
+                alt=""
+                class="hover:scale-110 hover:duration-300 hover:ease-in transition w-full"
+              />
+              <p class="text-textColor text-3xl text-center">
+                Digital Marketing Home Page
+              </p>
+              <p class="text-textColor">Tech : HTML5, CSS3</p>
+              <p class="text-textColor">For : Desktop</p>
+              <div
+                class="buttons w-full mx-auto flex justify-between items-center"
+              >
+                <a
+                  href="https://github.com/ISoumyadeepLaha/Digital-Marketing-Home-page-proj04"
+                  ><button
+                    class="text-lg text-themeColor border-2 border-themeColor rounded-full p-2 md:px-4 hover:bg-themeColor hover:text-textColor hover:ease-in hover:duration-300"
+                  >
+                    Source code
+                  </button></a
+                >
+                <a
+                  href="https://digital-marketing-home-page-proj04.netlify.app/"
+                  ><button
+                    class="text-lg text-themeColor border-2 border-themeColor rounded-full p-2 md:px-4 hover:bg-themeColor hover:text-textColor hover:ease-in hover:duration-300"
+                  >
+                    Live link
+                  </button></a
+                >
+              </div>
+            </div>
+            <div
+              class="card flex flex-col items-start md:items-center gap-y-6 p-6 shadow-xl rounded-xl"
+            >
+              <img
+                src="./images/Screen_Project5.jpg"
+                alt=""
+                class="hover:scale-110 hover:duration-300 hover:ease-in transition w-full"
+              />
+              <p class="text-textColor text-3xl text-center">
+                Crypto Landing Page
+              </p>
+              <p class="text-textColor">Tech : HTML5, CSS3</p>
+              <p class="text-textColor">For : Desktop</p>
+              <div
+                class="buttons w-full mx-auto flex justify-between items-center"
+              >
+                <a
+                  href="https://github.com/ISoumyadeepLaha/Crypto-landing-page-project05"
+                  ><button
+                    class="text-lg text-themeColor border-2 border-themeColor rounded-full p-2 md:px-4 hover:bg-themeColor hover:text-textColor hover:ease-in hover:duration-300"
+                  >
+                    Source code
+                  </button></a
+                >
+                <a href="https://crypto-landing-page-proj05.netlify.app/"
+                  ><button
+                    class="text-lg text-themeColor border-2 border-themeColor rounded-full p-2 md:px-4 hover:bg-themeColor hover:text-textColor hover:ease-in hover:duration-300"
+                  >
+                    Live link
+                  </button></a
+                >
+              </div>
+            </div>
+            <div
+              class="card flex flex-col items-start md:items-center gap-y-8 p-6 shadow-xl rounded-xl"
+            >
+              <img
+                src="./images/Screen_Project6.jpg"
+                alt=""
+                class="hover:scale-110 hover:duration-300 hover:ease-in transition w-full"
+              />
+              <p class="text-textColor text-3xl text-center">Plant Home Page</p>
+              <p class="text-textColor">Tech : HTML5, CSS3</p>
+              <p class="text-textColor">For : Desktop</p>
+              <div
+                class="buttons w-full mx-auto flex justify-between items-center"
+              >
+                <a
+                  href="https://github.com/ISoumyadeepLaha/Plant-Home-Page-proj06"
+                  ><button
+                    class="text-lg text-themeColor border-2 border-themeColor rounded-full p-2 md:px-4 hover:bg-themeColor hover:text-textColor hover:ease-in hover:duration-300"
+                  >
+                    Source code
+                  </button></a
+                >
+                <a href="https://plant-home-page-proj06.netlify.app/"
+                  ><button
+                    class="text-lg text-themeColor border-2 border-themeColor rounded-full p-2 md:px-4 hover:bg-themeColor hover:text-textColor hover:ease-in hover:duration-300"
+                  >
+                    Live link
+                  </button></a
+                >
+              </div>
+            </div>
+            <div
+              class="card flex flex-col items-start md:items-center gap-y-8 p-6 shadow-xl rounded-xl"
+            >
+              <img
+                src="./images/Screen_Project7.jpg"
+                alt=""
+                class="hover:scale-110 hover:duration-300 hover:ease-in transition w-full"
+              />
+              <p class="text-textColor text-3xl text-center">
+                Product Home Page
+              </p>
+              <p class="text-textColor">Tech : HTML5, CSS3</p>
+              <p class="text-textColor">For : Desktop || Mobile</p>
+              <div
+                class="buttons w-full mx-auto flex justify-between items-center"
+              >
+                <a
+                  href="https://github.com/ISoumyadeepLaha/Product-Home-Page-proj07"
+                  ><button
+                    class="text-lg text-themeColor border-2 border-themeColor rounded-full p-2 md:px-4 hover:bg-themeColor hover:text-textColor hover:ease-in hover:duration-300"
+                  >
+                    Source code
+                  </button></a
+                >
+                <a href="https://product-home-page-proj07.netlify.app/"
+                  ><button
+                    class="text-lg text-themeColor border-2 border-themeColor rounded-full p-2 md:px-4 hover:bg-themeColor hover:text-textColor hover:ease-in hover:duration-300"
+                  >
+                    Live link
+                  </button></a
+                >
+              </div>
+            </div>
+            <div
+              class="card flex flex-col items-start md:items-center gap-y-6 p-6 shadow-xl rounded-xl"
+            >
+              <img
+                src="./images/Screen_Project8.jpg"
+                alt=""
+                class="hover:scale-110 hover:duration-300 hover:ease-in transition w-full"
+              />
+              <p class="text-textColor text-3xl text-center">
+                Web Design Landing Page
+              </p>
+              <p class="text-textColor">Tech : HTML5, CSS3</p>
+              <p class="text-textColor">For : Desktop || Mobile</p>
+              <div
+                class="buttons w-full mx-auto flex justify-between items-center"
+              >
+                <a
+                  href="https://github.com/ISoumyadeepLaha/Design-Landing-Page-proj08"
+                  ><button
+                    class="text-lg text-themeColor border-2 border-themeColor rounded-full p-2 md:px-4 hover:bg-themeColor hover:text-textColor hover:ease-in hover:duration-300"
+                  >
+                    Source code
+                  </button></a
+                >
+                <a href="https://design-landing-page-proj08.netlify.app/"
+                  ><button
+                    class="text-lg text-themeColor border-2 border-themeColor rounded-full p-2 md:px-4 hover:bg-themeColor hover:text-textColor hover:ease-in hover:duration-300"
+                  >
+                    Live link
+                  </button></a
+                >
+              </div>
+            </div>
+            <div
+              class="card flex flex-col items-start md:items-center gap-y-6 p-6 shadow-xl rounded-xl"
+            >
+              <img
+                src="./images/Screen_Project9.jpg"
+                alt=""
+                class="hover:scale-110 hover:duration-300 hover:ease-in transition w-full"
+              />
+              <p class="text-textColor text-3xl text-center">
+                Developer Landing Page
+              </p>
+              <p class="text-textColor">Tech : HTML5, CSS3</p>
+              <p class="text-textColor">For : Desktop || Mobile</p>
+              <div
+                class="buttons w-full mx-auto flex justify-between items-center"
+              >
+                <a
+                  href="https://github.com/ISoumyadeepLaha/Developer-Landing-Page-proj09"
+                  ><button
+                    class="text-lg text-themeColor border-2 border-themeColor rounded-full p-2 md:px-4 hover:bg-themeColor hover:text-textColor hover:ease-in hover:duration-300"
+                  >
+                    Source code
+                  </button></a
+                >
+                <a href="https://developer-landing-page-proj09.netlify.app/"
+                  ><button
+                    class="text-lg text-themeColor border-2 border-themeColor rounded-full p-2 md:px-4 hover:bg-themeColor hover:text-textColor hover:ease-in hover:duration-300"
+                  >
+                    Live link
+                  </button></a
+                >
+              </div>
+            </div>
+            <div
+              class="card flex flex-col items-start md:items-center gap-y-6 p-6 shadow-xl rounded-xl"
+            >
+              <img
+                src="./images/Screen_Project10.jpg"
+                alt=""
+                class="hover:scale-110 hover:duration-300 hover:ease-in transition w-full"
+              />
+              <p class="text-textColor text-3xl text-center">
+                Interior Design Landing Page
+              </p>
+              <p class="text-textColor">Tech : HTML5, CSS3</p>
+              <p class="text-textColor">For : Desktop || Mobile</p>
+              <div
+                class="buttons w-full mx-auto flex justify-between items-center"
+              >
+                <a
+                  href="https://github.com/ISoumyadeepLaha/Interior-Design-landing-page-proj10-"
+                  ><button
+                    class="text-lg text-themeColor border-2 border-themeColor rounded-full p-2 md:px-4 hover:bg-themeColor hover:text-textColor hover:ease-in hover:duration-300"
+                  >
+                    Source code
+                  </button></a
+                >
+                <a
+                  href="https://interior-design-landing-page-proj10.netlify.app/"
+                  ><button
+                    class="text-lg text-themeColor border-2 border-themeColor rounded-full p-2 md:px-4 hover:bg-themeColor hover:text-textColor hover:ease-in hover:duration-300"
+                  >
+                    Live link
+                  </button></a
+                >
+              </div>
+            </div>
+            <div
+              class="card flex flex-col items-start md:items-center gap-y-6 p-6 shadow-xl rounded-xl"
+            >
+              <img
+                src="./images/Screen_Project11.jpg"
+                alt=""
+                class="hover:scale-110 hover:duration-300 hover:ease-in transition w-full"
+              />
+              <p class="text-textColor text-3xl text-center">
+                Hosting Landing Page
+              </p>
+              <p class="text-textColor">Tech : HTML5, CSS3</p>
+              <p class="text-textColor">For : Desktop || Mobile</p>
+              <div
+                class="buttons w-full mx-auto flex justify-between items-center"
+              >
+                <a
+                  href="https://github.com/ISoumyadeepLaha/Hosting-website-proj11"
+                  ><button
+                    class="text-lg text-themeColor border-2 border-themeColor rounded-full p-2 md:px-4 hover:bg-themeColor hover:text-textColor hover:ease-in hover:duration-300"
+                  >
+                    Source code
+                  </button></a
+                >
+                <a href="https://hosting-website-proj11.netlify.app/"
+                  ><button
+                    class="text-lg text-themeColor border-2 border-themeColor rounded-full p-2 md:px-4 hover:bg-themeColor hover:text-textColor hover:ease-in hover:duration-300"
+                  >
+                    Live link
+                  </button></a
+                >
+              </div>
+            </div>
+            <div
+              class="card flex flex-col items-start md:items-center gap-y-6 p-6 shadow-xl rounded-xl"
+            >
+              <img
+                src="./images/Screen_Project12.jpg"
+                alt=""
+                class="hover:scale-110 hover:duration-300 hover:ease-in transition w-full"
+              />
+              <p class="text-textColor text-3xl text-center">
+                Business Landing Page
+              </p>
+              <p class="text-textColor">Tech : HTML5, CSS3</p>
+              <p class="text-textColor">For : Desktop || Mobile</p>
+              <div
+                class="buttons w-full mx-auto flex justify-between items-center"
+              >
+                <a
+                  href="https://github.com/ISoumyadeepLaha/Business-Landing-Page-Proj12"
+                  ><button
+                    class="text-lg text-themeColor border-2 border-themeColor rounded-full p-2 md:px-4 hover:bg-themeColor hover:text-textColor hover:ease-in hover:duration-300"
+                  >
+                    Source code
+                  </button></a
+                >
+                <a href="https://business-landing-page-proj12-sl.netlify.app/"
+                  ><button
+                    class="text-lg text-themeColor border-2 border-themeColor rounded-full p-2 md:px-4 hover:bg-themeColor hover:text-textColor hover:ease-in hover:duration-300"
+                  >
+                    Live link
+                  </button></a
+                >
+              </div>
+            </div>
+            <div
+              class="card flex flex-col items-start md:items-center gap-y-6 p-6 shadow-xl rounded-xl"
+            >
+              <img
+                src="./images/Screen_Project13.jpg"
+                alt=""
+                class="hover:scale-110 hover:duration-300 hover:ease-in transition w-full"
+              />
+              <p class="text-textColor text-3xl text-center">
+                SAAS Landing Page
+              </p>
+              <p class="text-textColor">Tech : HTML5, CSS3</p>
+              <p class="text-textColor">For : Desktop || Mobile</p>
+              <div
+                class="buttons w-full mx-auto flex justify-between items-center"
+              >
+                <a
+                  href="https://github.com/ISoumyadeepLaha/Saas_Landing_Page_proj13"
+                  ><button
+                    class="text-lg text-themeColor border-2 border-themeColor rounded-full p-2 md:px-4 hover:bg-themeColor hover:text-textColor hover:ease-in hover:duration-300"
+                  >
+                    Source code
+                  </button></a
+                >
+                <a
+                  href="https://6310a5722a5c10006875940b--saas-landing-page-proj13.netlify.app/"
+                  ><button
+                    class="text-lg text-themeColor border-2 border-themeColor rounded-full p-2 md:px-4 hover:bg-themeColor hover:text-textColor hover:ease-in hover:duration-300"
+                  >
+                    Live link
+                  </button></a
+                >
+              </div>
+            </div>
+            <div
+              class="card flex flex-col items-start md:items-center gap-y-6 p-6 shadow-xl rounded-xl"
+            >
+              <img
+                src="./images/Screen_Project14.jpg"
+                alt=""
+                class="hover:scale-110 hover:duration-300 hover:ease-in transition w-full"
+              />
+              <p class="text-textColor text-3xl text-center">Dance Home Page</p>
+              <p class="text-textColor">Tech : HTML5, CSS3</p>
+              <p class="text-textColor">For : Desktop</p>
+              <div
+                class="buttons w-full mx-auto flex justify-between items-center"
+              >
+                <a
+                  href="https://github.com/ISoumyadeepLaha/Dance-Home-Page-proj14"
+                  ><button
+                    class="text-lg text-themeColor border-2 border-themeColor rounded-full p-2 md:px-4 hover:bg-themeColor hover:text-textColor hover:ease-in hover:duration-300"
+                  >
+                    Source code
+                  </button></a
+                >
+                <a href="https://dance-home-page-proj14.netlify.app/"
+                  ><button
+                    class="text-lg text-themeColor border-2 border-themeColor rounded-full p-2 md:px-4 hover:bg-themeColor hover:text-textColor hover:ease-in hover:duration-300"
+                  >
+                    Live link
+                  </button></a
+                >
+              </div>
+            </div>
+            <div
+              class="card flex flex-col items-start md:items-center gap-y-4 p-6 shadow-xl rounded-xl"
+            >
+              <img
+                src="./images/Screen_Project15.jpg"
+                alt=""
+                class="hover:scale-110 hover:duration-300 hover:ease-in transition w-full"
+              />
+              <p class="text-textColor text-3xl text-center">
+                Product Design Landing Page
+              </p>
+              <p class="text-textColor">Tech : HTML5, CSS3</p>
+              <p class="text-textColor">For : Desktop || Mobile</p>
+              <div
+                class="buttons w-full mx-auto flex justify-between items-center"
+              >
+                <a
+                  href="https://github.com/ISoumyadeepLaha/Product-Design-Page-Proj15"
+                  ><button
+                    class="text-lg text-themeColor border-2 border-themeColor rounded-full p-2 md:px-4 hover:bg-themeColor hover:text-textColor hover:ease-in hover:duration-300"
+                  >
+                    Source code
+                  </button></a
+                >
+                <a
+                  href="https://product-design-landing-page-proj15.netlify.app/"
+                  ><button
+                    class="text-lg text-themeColor border-2 border-themeColor rounded-full p-2 md:px-4 hover:bg-themeColor hover:text-textColor hover:ease-in hover:duration-300"
+                  >
+                    Live link
+                  </button></a
+                >
+              </div>
+            </div>
+            <div
+              class="card flex flex-col items-start md:items-center gap-y-6 p-6 shadow-xl rounded-xl"
+            >
+              <img
+                src="./images/Screen_Paytm.jpg"
+                alt=""
+                class="hover:scale-110 hover:duration-300 hover:ease-in transition w-full"
+              />
+              <p class="text-textColor text-3xl text-center">Paytm Clone</p>
+              <p class="text-textColor">Tech : HTML5, TailwindCSS</p>
+              <p class="text-textColor">For : Desktop || Mobile</p>
+              <div
+                class="buttons w-full mx-auto flex justify-between items-center"
+              >
+                <a
+                  href="https://github.com/ISoumyadeepLaha/Paytm-Clone-TailwindCSS"
+                  ><button
+                    class="text-lg text-themeColor border-2 border-themeColor rounded-full p-2 md:px-4 hover:bg-themeColor hover:text-textColor hover:ease-in hover:duration-300"
+                  >
+                    Source code
+                  </button></a
+                >
+                <a href="https://soumyadeep-paytm-clone.netlify.app/"
+                  ><button
+                    class="text-lg text-themeColor border-2 border-themeColor rounded-full p-2 md:px-4 hover:bg-themeColor hover:text-textColor hover:ease-in hover:duration-300"
+                  >
+                    Live link
+                  </button></a
+                >
+              </div>
+            </div>
+            <div
+              class="card flex flex-col items-start md:items-center gap-y-6 p-6 shadow-xl rounded-xl"
+            >
+              <img
+                src="./images/Screen_Shopify.jpg"
+                alt=""
+                class="hover:scale-110 hover:duration-300 hover:ease-in transition w-full"
+              />
+              <p class="text-textColor text-3xl text-center">Shopify Clone</p>
+              <p class="text-textColor">Tech : HTML5, TailwindCSS</p>
+              <p class="text-textColor">For : Desktop || Mobile</p>
+              <div
+                class="buttons w-full mx-auto flex justify-between items-center"
+              >
+                <a
+                  href="https://github.com/ISoumyadeepLaha/Shopify-Clone-TailwindCSS"
+                  ><button
+                    class="text-lg text-themeColor border-2 border-themeColor rounded-full p-2 md:px-4 hover:bg-themeColor hover:text-textColor hover:ease-in hover:duration-300"
+                  >
+                    Source code
+                  </button></a
+                >
+                <a href="https://soumyadeep-shopify-clone.netlify.app/"
+                  ><button
+                    class="text-lg text-themeColor border-2 border-themeColor rounded-full p-2 md:px-4 hover:bg-themeColor hover:text-textColor hover:ease-in hover:duration-300"
+                  >
+                    Live link
+                  </button></a
+                >
+              </div>
+            </div>
+            <div
+              class="card flex flex-col items-start md:items-center gap-y-6 p-6 shadow-xl rounded-xl"
+            >
+              <img
+                src="./images/Screen_Rode.jpg"
+                alt=""
+                class="hover:scale-110 hover:duration-300 hover:ease-in transition w-full"
+              />
+              <p class="text-textColor text-3xl text-center">Rode Clone</p>
+              <p class="text-textColor">Tech : HTML5, TailwindCSS</p>
+              <p class="text-textColor">For : Desktop || Mobile</p>
+              <div
+                class="buttons w-full mx-auto flex justify-between items-center"
+              >
+                <a
+                  href="https://github.com/ISoumyadeepLaha/Rode-Clone-TailwindCSS"
+                  ><button
+                    class="text-lg text-themeColor border-2 border-themeColor rounded-full p-2 md:px-4 hover:bg-themeColor hover:text-textColor hover:ease-in hover:duration-300"
+                  >
+                    Source code
+                  </button></a
+                >
+                <a href="https://soumyadeep-rode-clone.netlify.app/"
+                  ><button
+                    class="text-lg text-themeColor border-2 border-themeColor rounded-full p-2 md:px-4 hover:bg-themeColor hover:text-textColor hover:ease-in hover:duration-300"
+                  >
+                    Live link
+                  </button></a
+                >
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <!-- Contact Section -->
+      <section class="mt-20 p-10 lg:px-20 shadow-2xl lg:mx-10 rounded-xl">
+        <h2 class="text-textColor text-2xl lg:text-4xl underline">
+          Contact Me
+        </h2>
+        <article id="contact">
+          <div class="contact-me">
+            <div
+              class="contact-me-head grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-full"
+            >
+              <div
+                class="phone mt-10 flex flex-col items-center gap-y-10 shadow-xl p-10"
+              >
+                <img src="./images/phone-solid.svg" alt="" class="w-10" />
+                <p class="text-textColor">+91-9140666170</p>
+              </div>
+              <div
+                class="phone mt-10 flex flex-col items-center gap-y-10 shadow-xl p-10"
+              >
+                <img src="./images/envelope-solid.svg" alt="" class="w-10" />
+                <p class="text-textColor">laha.soumyadeep@gmail.com</p>
+              </div>
+              <div
+                class="phone mt-10 flex flex-col items-center gap-y-10 shadow-xl p-10"
+              >
+                <img
+                  src="./images/location-dot-solid.svg"
+                  alt=""
+                  class="w-10"
+                />
+                <p class="text-textColor">Varanasi, Uttar Pradesh</p>
+              </div>
+            </div>
+            <div
+              class="contact-me-form flex flex-col lg:flex-row justify-between mt-10 shadow-xl w-[100%]"
+            >
+              <div class="form-img w-1/2 hidden lg:flex">
+                <img src="./images/contact-img.jpg" alt="" />
+              </div>
+              <form
+                class="w-full lg:w-1/2 lg:px-10 flex flex-col items-center gap-y-4"
+              >
+                <div
+                  class="input-field flex flex-col lg:flex-row justify-between w-[100%]"
+                >
+                  <label
+                    for="name"
+                    class="text-textColor text-xl hidden lg:flex"
+                    >Name :</label
+                  >
+                  <input
+                    type="text"
+                    id="name"
+                    class="h-10 w-full lg:w-[80%] rounded-xl bg-transparent border p-4 text-textColor"
+                    placeholder="Your Name"
+                  />
+                </div>
+                <div
+                  class="input-field flex flex-col lg:flex-row justify-between w-[100%]"
+                >
+                  <label
+                    for="email"
+                    class="text-textColor text-xl hidden lg:flex"
+                    >Email :</label
+                  >
+                  <input
+                    type="email"
+                    id="email"
+                    class="h-10 w-full lg:w-[80%] rounded-xl bg-transparent border p-4 text-textColor"
+                    placeholder="Your Email"
+                  />
+                </div>
+                <textarea
+                  class="bg-transparent border p-4 text-textColor rounded-xl h-full w-[100%]"
+                  placeholder="Your Message"
+                ></textarea>
+                <button
+                  type="submit"
+                  class="text-base text-themeColor border-2 border-themeColor rounded-full px-10 md:px-4 hover:bg-themeColor hover:text-textColor hover:ease-in hover:duration-300"
+                >
+                  Submit
+                </button>
+              </form>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <!-- Footer Section -->
+      <footer
+        class="mt-10 flex flex-col justify-between items-center bg-bodyColor w-[100%] px-10 py-4 gap-y-4"
+      >
+        <a href="#" class="float-right mx-10 block md:hidden"
+          ><img
+            src="./images/arrow-up-solid.svg"
+            alt="arrow"
+            class="h-10"
+          />Back to Top</a
+        >
+
+        <div class="flex justify-center items-center w-full text-center">
+          <p class="text-textColor text-xl">
+            Portfolio | Soumyadeep Laha | Copyright &copy; 2022
+          </p>
+        </div>
+      </footer>
+    </div>
+
+    <!-- JS toggle bar -->
+    <script>
+      function Menu(e) {
+        let list = document.querySelector("ul");
+        e.name === "menu"
+          ? ((e.name = "close"),
+            list.classList.add("top-[80px]"),
+            list.classList.add("opacity-100"))
+          : ((e.name = "menu"),
+            list.classList.remove("top-[80px]"),
+            list.classList.remove("opacity-100"));
+      }
+    </script>
+  </body>
+</html>
