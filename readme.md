@@ -30,6 +30,6 @@ The design tooked me around 2 hrs 15 mins, but the total project tooked around 1
 
 # Live Link
 
-[Netlify Link...]()
+[Netlify Link...](https://soumyadeeplaha.netlify.app/)
 
 
